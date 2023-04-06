@@ -1,3 +1,5 @@
+package Carros;
+
 public class Carro {
     //declaramos os atributos da classe
     int potencia;

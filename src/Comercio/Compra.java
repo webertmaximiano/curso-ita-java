@@ -1,3 +1,5 @@
+package Comercio;
+
 public class Compra {
     int valorTotal;
     int numeroParcelas;

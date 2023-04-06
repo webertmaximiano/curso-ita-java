@@ -1,18 +1,20 @@
-public class Principal {
-    public static void main(String[] args) {
-        Carro f = new Carro();
+package Carros;
 
-        Carro c1 = new Carro();//criando um objeto carro partindo da classe carro
+public class PrincipalCarro {
+    public static void main(String[] args) {
+        Carro f = new Carro ();
+
+        Carro c1 = new Carro ();//criando um objeto carro partindo da classe carro
         c1.potencia = 10;
         c1.nome = "Corcel";
         c1.velocidade = 0;
 
-        Carro c2 = new Carro();//criando um objeto carro partindo da classe carro
+        Carro c2 = new Carro ();//criando um objeto carro partindo da classe carro
         c2.potencia = 15;
         c2.nome = "Carango";
         c2.velocidade = 0;
 
-        Carro c3 = new Carro();//criando um objeto carro partindo da classe carro
+        Carro c3 = new Carro ();//criando um objeto carro partindo da classe carro
         c3.potencia = 10;
         c3.nome = "Corcel";
         c3.velocidade = 0;
