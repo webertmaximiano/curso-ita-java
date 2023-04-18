@@ -1,4 +1,5 @@
 package QualOprecoDaPizza;
+
 //criamos a Classe Principal
 public class Principal {
     public static void main(String[] args) {
@@ -12,11 +13,15 @@ public class Principal {
 
         //adicionando as pizzas criadas no carrinho
         carrinhoDeCompras.adicionaPizza(pizza1);
+        System.out.println("Valor Pizza 1: R$ " + carrinhoDeCompras.getValorPizza ());
         carrinhoDeCompras.adicionaPizza(pizza2);
+        System.out.println("Valor Pizza 2: R$ " + carrinhoDeCompras.getValorPizza ());
         carrinhoDeCompras.adicionaPizza(pizza3);
+        System.out.println("Valor Pizza 3: R$ " + carrinhoDeCompras.getValorPizza ());
 
         //exibi o Valor total do Carrinho
         System.out.println("Valor total: R$ " + carrinhoDeCompras.getValorTotal());
+        System.out.println("_________________________________________");
 
         // exibi os ingridientes
         System.out.println("Ingredientes utilizados:");

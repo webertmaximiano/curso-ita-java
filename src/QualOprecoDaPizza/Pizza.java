@@ -13,6 +13,7 @@ public class Pizza {
     //variável para o preço
     public int preco;
 
+
     // metodo para preparar a pizza
     public Pizza(String[] ingredientes) {
         // verifica se existe pelo menos 1 igridiente
@@ -25,6 +26,13 @@ public class Pizza {
         this.preco = calculaPreco(ingredientes);
 
         contabilizaIngredientes(ingredientes);
+
+        zerarIngredientes (ingredientes);
+    }
+
+    //Metoto para zerar os igridientes
+    public static void zerarIngredientes(String[] ingredientes) {
+        ingredientes = new String[0];
     }
 
     //metodo getPreço retorna o resultado do calculo do preço
@@ -56,4 +64,6 @@ public class Pizza {
             return 23;
         }
     }
+
+
 }

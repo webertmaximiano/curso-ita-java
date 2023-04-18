@@ -16,6 +16,16 @@ public class CarrinhoDeCompras {
         // adiciona a pizza no carrinho
         pizzas.add(pizza);
     }
+
+    //metodo que retorna o valor da pizza
+    public int getValorPizza(){
+        int valorPizza = 0;
+
+        for (Pizza pizza : pizzas) {
+            valorPizza = pizza.getPreco();
+        }
+        return valorPizza;
+    }
     //metodo que calcula o valor total, ele percorre o array do carrinho, pega o preço de cada pizza e soma retornando o valor total
     public int getValorTotal() {
         int valorTotal = 0;
