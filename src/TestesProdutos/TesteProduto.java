@@ -1,4 +1,4 @@
-package Testes;
+package TestesProdutos;
 
 import Produtos.Produto;
 import org.junit.Before;

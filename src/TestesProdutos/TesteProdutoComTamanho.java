@@ -1,4 +1,4 @@
-package Testes;
+package TestesProdutos;
 
 import Produtos.ProdutoComTamanho;
 import org.junit.Before;
