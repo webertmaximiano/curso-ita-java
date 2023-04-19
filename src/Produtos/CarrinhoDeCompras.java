@@ -3,13 +3,14 @@ import java.util.HashMap;
 
 public class CarrinhoDeCompras {
     private HashMap<ProdutoComTamanho, Integer> produtosNoCarrinho;
+    int quantidadeAtual;
 
     public CarrinhoDeCompras() {
         produtosNoCarrinho = new HashMap<>();
     }
 
     public void adicionaProduto(ProdutoComTamanho produto, int quantidade) {
-        int quantidadeAtual = produtosNoCarrinho.getOrDefault(produto, 0);
+        quantidadeAtual = produtosNoCarrinho.getOrDefault(produto, 0);
         produtosNoCarrinho.put(produto, quantidadeAtual + quantidade);
     }
 
@@ -21,6 +22,9 @@ public class CarrinhoDeCompras {
         } else {
             produtosNoCarrinho.remove(produto);
         }
+    }
+    public int getQuantidadeAtual() {
+        return produtosNoCarrinho.size();
     }
 
     public double calculaValorTotal() {
