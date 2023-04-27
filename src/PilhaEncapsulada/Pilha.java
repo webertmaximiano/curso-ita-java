@@ -1,5 +1,7 @@
 package PilhaEncapsulada;
 
+import java.util.Arrays;
+
 public class Pilha {
     private Object[] elementos;
     private int topo = 0;
@@ -21,4 +23,10 @@ public class Pilha {
     public int tamanho() {
         return topo;
     }
+
+    public Object[] getElementos(){
+        Object[] paraRetorno = Arrays.copyOf(elementos, tamanho());
+        return paraRetorno;
+    }
+
 }
